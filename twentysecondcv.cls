@@ -31,8 +31,8 @@
 %----------------------------------------------------------------------------------------
 
 \definecolor{white}{HTML}{FFFFFF}
-\definecolor{gray}{HTML}{4D4D4D}
-\definecolor{bluecolor}{HTML}{4396E1}
+\definecolor{gray}{HTML}{424242}
+\definecolor{bluecolor}{HTML}{12436E}
 \definecolor{sidebarcolor}{HTML}{E7E7E7}
 \definecolor{maincolor}{HTML}{3B9E80}
 \definecolor{altmaincolor}{HTML}{3b8b9e}
@@ -42,7 +42,7 @@
 %	 MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
+\renewcommand{\bf}[1]{\bfseries\color{gray}#1} % Make \textbf produce coloured text instead
 
 \pagestyle{empty} % Disable headers and footers
 
@@ -95,7 +95,10 @@
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 
 % Command for printing the contact information icons
-\newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=maincolor,maincolor,text=white] (char) {#1};}}
+\newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=draw, circle, inner sep=1pt, fill=maincolor, maincolor, text=white] (char) {#1};}}
+%\newcommand*\icon[1]{{\color{maincolor} #1}}
+
+
 
 % Command for printing skill progress bars
 \newcommand\skills[1]{ 
@@ -180,13 +183,13 @@
 		%------------------------------------------------
 
 		\renewcommand{\arraystretch}{1.6}
-		\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
-			\ifthenelse{\equal{\cvdate}{}}{}{       \icon{\faIcon{calendar-day}}  & \cvdate\\}
-			\ifthenelse{\equal{\cvaddress}{}}{}{    \icon{\faIcon{house-user}}    & \cvaddress\\}
-			\ifthenelse{\equal{\cvnumberphone}{}}{}{\icon{\faIcon{phone}}         & \cvnumberphone\\}
-			\ifthenelse{\equal{\cvsite}{}}{}{       \icon{\faIcon{globe}}         & \href{\cvsite}{\cvsite}\\}
-			\ifthenelse{\equal{\cvmail}{}}{}{       \icon{\faIcon{at}}            & \href{mailto:\cvmail}{\cvmail}\\}
-			\ifthenelse{\equal{\cvgithub}{}}{}{     \icon{\faIcon{github}}        & \href{\cvgithub}{\cvgithub}}
+		\begin{tabular}{c @{\hskip 0.5cm}p{5cm}}
+      %\ifthenelse{\equal{\cvdate}{}}{}{\icon{\faIcon{calendar-day}}&\cvdate\\}
+			\ifthenelse{\equal{\cvaddress}{}}{}{\icon{\faIcon{house-user}}&\cvaddress\\}
+			\ifthenelse{\equal{\cvnumberphone}{}}{}{\icon{\faIcon{phone}}&\cvnumberphone\\}
+			\ifthenelse{\equal{\cvsite}{}}{}{\icon{\faIcon{globe}}&\href{\cvsite}{\cvsite}\\}
+			\ifthenelse{\equal{\cvmail}{}}{}{\icon{\faIcon{at}}&\href{mailto:\cvmail}{\cvmail}\\}
+			\ifthenelse{\equal{\cvgithub}{}}{}{\icon{\faIcon{github}}&\href{\cvgithub}{\cvgithub}}
 		\end{tabular}
 
 		%------------------------------------------------
@@ -229,26 +232,26 @@
 
 % Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
-	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
+	\tikz[baseline=(char.base)]\node[anchor=north west, draw, rectangle, rounded corners, inner sep=2pt, minimum size=5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
 }
 
 \newcounter{colorCounter}
 \newcommand{\sectioncolor}[1]{%
 	{%
-		\round{#1}{
+    \colorbox{
 			\ifodd\value{colorCounter}%
 			altmaincolor\else%
 			maincolor\fi%
-		}%
+    }{\parbox{0.985\textwidth}{#1}}
 	}%
 	\stepcounter{colorCounter}%
 }
 
 \renewcommand{\section}[1]{
-	{%
-		\color{white}%
-		\Large\sectioncolor{#1}%
-	}
+  {
+    \color{white}%
+    \Large\sectioncolor{#1}%
+  }
 }
 
 \renewcommand{\subsection}[1]{
