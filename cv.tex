@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{me.png} % Profile picture
+
+\cvname{João de Jesus Costa} % Your name
+\cvjobtitle{Software Engineer} % Job title/career
+
+\cvdate{14 September 2000} % Date of birth
+\cvaddress{Santa Maria da Feira, Portugal} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{(+351) 912768196} % Phone number
+\cvsite{https://joaocosta.dev} % Personal website
+\cvmail{joaocosta.work@posteo.net} % Email address
+\cvgithub{https://github.com/JoaoCostaIFG} % GitHub
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{
+  Software engineer currently enrolled in a Master's degree in Informatics and Computing
+  Engineering at FEUP. Interests mainly reside in developing software, server
+  administration, writing, and electronics. Has experience conducting workshops
+  related to informatics as a member of IEEE's University of Porto student branch, and
+  working in large teams.
+}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{
+  {Python/4},
+  {Linux/5},
+  {Java/4},
+  {DevOps/3},
+  {C - C++/4.5}}
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{}
+
+\languageskills{
+  {Portuguese/Native},
+  {English/C1}}
+
+\softskills{communication, problem-solving, flexibility}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+\vspace*{\fill} 
+
+%----------------------------------------------------------------------------------------
+%	 HOBBIES / INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Hobbies/Interests}
+
+Working on personal projects involving informatics and (sometimes) electronics. Often,
+these projects lead to contributions to open-source software. Enjoys maintaining a
+personal server and blog.
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+	\twentyitem{2021 - Current}{Master of Science}
+    {Faculty of Engineering of the University of Porto (FEUP)}
+    {\emph{Majoring in Informatics Engineering}}
+	\twentyitem{2018 - 2021}{Bachelor of Science}
+    {Faculty of Engineering of the University of Porto (FEUP)}
+    {\emph{Final grade 18/20}}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+%
+%\begin{twentyshort}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+%
+%\begin{twentyshort}
+%	%\twentyitemshort{<dates>}{<title/description>}
+%	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work experience}
+
+\begin{twenty}
+	%\twentyitem{<dates>}{<title>}{<company>}{<description>}
+	\twentyitem{2022}{Software developer}{Critical Software}
+    {Enrolled in the summer internship program at Critical Software (Summer Camp), with
+    the objective of learning more about the company's activities, and developing
+    soft-skills. Developed three projects, and attended multiple workshops during
+    this one-month internship.}
+	\twentyitem{2020-2021}{Computer games developer}{LusoInfo}
+    {Responsible from the team tasked to recreate a set of educational games, developed
+    in flash, in the Unity game engine. These games were then hosted in the company's
+    website to be played by children (aged 6 to 14) at school. Developed the games
+    in C\# for the Unity game engine, with an emphasis on performance so the games
+    ran on WebGL on lower-end computers.}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{twenty}
+	%\twentyitem{<dates>}{<title>}{<company>}{<description>}
+  \twentyitem{2022}{µKernel}
+    {\twentyshortghref{https://github.com/JoaoCostaIFG/SETR/tree/master/uKernel}{Project's GitHub page}}
+    {A real-time micro-kernel for the Arduino UNO supporting POSIX style tasks, mutexes,
+    EDF scheduling, task sleeping, and assertions. Responsible for most of the implementation
+    and research for the project.}
+  \twentyitem{2021}{Dry Beans classification}
+    {\twentyshortghref{https://github.com/JoaoCostaIFG/IART/tree/master/Proj2}{Project's GitHub page}}
+    {Model (unsupervised learning) to classify beans between seven classes with similar
+    features. This served as an opportunity to gain experience in data science and machine
+    learning libraries for python. Responsible for part of the data analysis and treatment,
+    the application of unsupervised learning algorithms, and the comparison of the results.}
+  \twentyitem{2021}{Dry Beans classification}
+    {\twentyshortghref{https://github.com/JoaoCostaIFG/LBAW/wiki/pa}{Project's GitHub page}}
+    {Online QA web application resembling \twentyshortref{https://stackoverflow.com}{StackOverflow}.
+    This project was developed with the purpose of learning Bootstrap, Docker, Laravel,
+    and PostgreSQL. Responsible for the Docker image, database design and indexes,
+    most of the front-end, and accessibility/design choices.}
+  \twentyitem{2020-2021}{MAWW}
+    {\twentyshortghref{https://github.com/JoaoCostaIFG/MAWW}{Project's GitHub page}}
+    {Program that allows users (using X11) on Linux to have animated backgrounds,
+    regardless of their compositor. This project is available as an
+    \twentyshortref{https://aur.archlinux.org/packages/maww}{Arch Linux package}
+    on the AUR.}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%TEXT
+
+%----------------------------------------------------------------------------------------
+
+\vfill
+
+\end{document} 
