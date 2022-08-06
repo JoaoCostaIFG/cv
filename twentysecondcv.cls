@@ -90,6 +90,7 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
+\newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
 \newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
 
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
@@ -187,9 +188,10 @@
       %\ifthenelse{\equal{\cvdate}{}}{}{\icon{\faIcon{calendar-day}}&\cvdate\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\icon{\faIcon{house-user}}&\cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\icon{\faIcon{phone}}&\cvnumberphone\\}
-			\ifthenelse{\equal{\cvsite}{}}{}{\icon{\faIcon{globe}}&\href{\cvsite}{\cvsite}\\}
+			\ifthenelse{\equal{\cvsite}{}}{}{\icon{\faIcon{globe}}&\href{https://\cvsite}{\cvsite}\\}
 			\ifthenelse{\equal{\cvmail}{}}{}{\icon{\faIcon{at}}&\href{mailto:\cvmail}{\cvmail}\\}
-			\ifthenelse{\equal{\cvgithub}{}}{}{\icon{\faIcon{github}}&\href{\cvgithub}{\cvgithub}}
+			\ifthenelse{\equal{\cvlinkedin}{}}{}{\icon{\faIcon{linkedin}}&\href{https://\cvlinkedin}{\cvlinkedin}\\}
+			\ifthenelse{\equal{\cvgithub}{}}{}{\icon{\faIcon{github}}&\href{https://\cvgithub}{\cvgithub}}
 		\end{tabular}
 
 		%------------------------------------------------
