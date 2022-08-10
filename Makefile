@@ -1,3 +1,3 @@
 .PHONY: all
 all:
-	xelatex JoaoCostaCV.tex
+	xelatex -halt-on-error JoaoCostaCV.tex
