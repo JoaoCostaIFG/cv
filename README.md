@@ -10,3 +10,7 @@ by [Vel](mailto:vel@latextemplates.com) for my use-case. This template was based
 on the
 [original](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex)
 one by [Carmine Spagnuolo](mailto:cspagnuolo@unisa.it).
+
+## Icons
+
+[FontAwesome5 icons](https://mirror.las.iastate.edu/tex-archive/fonts/fontawesome5/doc/fontawesome5.pdf).
