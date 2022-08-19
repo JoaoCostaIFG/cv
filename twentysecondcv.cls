@@ -188,8 +188,8 @@
       %\ifthenelse{\equal{\cvdate}{}}{}{\icon{\faIcon{calendar-day}}&\cvdate\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\icon{\faIcon{house-user}}&\cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\icon{\faIcon{phone}}&\href{tel:\cvnumberphone}{\cvnumberphone}\\}
-			\ifthenelse{\equal{\cvsite}{}}{}{\icon{\faIcon{globe}}&\href{https://\cvsite}{\cvsite}\\}
-			\ifthenelse{\equal{\cvmail}{}}{}{\icon{\faIcon{at}}&\href{mailto:\cvmail}{\cvmail}\\}
+			\ifthenelse{\equal{\cvsite}{}}{}{\icon{\faIcon{link}}&\href{https://\cvsite}{\cvsite}\\}
+			\ifthenelse{\equal{\cvmail}{}}{}{\icon{\faIcon{envelope}}&\href{mailto:\cvmail}{\cvmail}\\}
 			\ifthenelse{\equal{\cvlinkedin}{}}{}{\icon{\faIcon{linkedin}}&\href{https://\cvlinkedin}{\cvlinkedin}\\}
 			\ifthenelse{\equal{\cvgithub}{}}{}{\icon{\faIcon{github}}&\href{https://\cvgithub}{\cvgithub}}
 		\end{tabular}
