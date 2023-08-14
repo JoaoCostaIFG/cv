@@ -45,13 +45,10 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{
-  I'm a software engineer currently enrolled in a Master's degree in Informatics and
-  Computing Engineering at FEUP. My interests mainly reside in developing software, taking
-  care of my servers, writing (I have a blog), and developing projects using microcontrollers.
-  I have experience conducting workshops related to informatics as a member of IEEE's University
-  of Porto student branch, and working in large teams.
-}
+\aboutme{I'm a software engineer with a Master's degree in Informatics Engineering at
+FEUP. My interests mainly reside in developing software, taking care of my servers,
+writing (I have a blog), and developing projects using microcontrollers. I have experience
+working in large and fully-remote teams, and publicly presenting my work and ideas.}
 
 %----------------------------------------------------------------------------------------
 %	 SKILLS
@@ -59,11 +56,11 @@
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
 \skills{
-  {Python/4},
-  {Linux/4},
-  {Java/4},
-  {DevOps/3},
-  {C - C++/4.5}}
+  {JavaScript - TypeScript/4},
+  {Java/4.5},
+  {Python/5},
+  {Linux - DevOps/5},
+  {C - C++/5.5}}
 
 % Skill text section, each skill must have a value between 0 an 6
 \skillstext{}
@@ -72,13 +69,13 @@
   {Portuguese/Native},
   {English/C1}}
 
-\softskills{communication, problem-solving, flexibility}
+\softskills{problem-solving, flexibility, communication}
 
 %----------------------------------------------------------------------------------------
 
 \makeprofile % Print the sidebar
 
-\vspace*{\fill} 
+\vfill
 
 %----------------------------------------------------------------------------------------
 %	 HOBBIES / INTERESTS
@@ -86,9 +83,11 @@
 
 \section{Hobbies/Interests}
 
-Working on personal projects involving informatics and (sometimes) electronics. Often,
-these projects lead to contributions to open-source software. Enjoys maintaining a
-personal server and blog.
+On my free-time, I'm usually working on personal projects involving informatics and (sometimes)
+electronics. Often, these projects lead to contributions to open-source software. I also enjoy
+maintaining a personal home-server and a blog focused on tech.
+
+\vfill
 
 %----------------------------------------------------------------------------------------
 %	 EDUCATION
@@ -98,36 +97,49 @@ personal server and blog.
 
 \begin{twenty}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-	\twentyitem{2021 - Current}{Master of Science}
+	\twentyitem{2021 - 2023}{Master in Informatics Engineering}
     {Faculty of Engineering of the University of Porto (FEUP)}
-    {\emph{Majoring in Informatics Engineering}}
+    {\emph{Final grade 18/20}}
 	\twentyitem{2018 - 2021}{Bachelor of Science}
     {Faculty of Engineering of the University of Porto (FEUP)}
     {\emph{Final grade 18/20}}
 \end{twenty}
 
+\vfill
+
 %----------------------------------------------------------------------------------------
 %	 PUBLICATIONS
 %----------------------------------------------------------------------------------------
 
-%\section{Publications}
-%
-%\begin{twentyshort}
-%	%\twentyitemshort{<dates>}{<title/description>}
-%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
-%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
-%\end{twentyshort}
+\section{Publications}
+
+\begin{twenty}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+	\twentyitem{2023}{Verification of the VxWorks real-time operating system for DO-178C compliance}
+    {}
+    {My Master's thesis. The objective of this thesis was to analyze and optimize the
+    processes of the
+    real-time OS verification team at Critical Software. This resulted in a list of
+    bottlenecks and action to address them, and the development of solutions/tools
+    for some problems.}
+\end{twenty}
+
+\vfill
 
 %----------------------------------------------------------------------------------------
 %	 AWARDS
 %----------------------------------------------------------------------------------------
 
-%\section{Awards}
-%
-%\begin{twentyshort}
-%	%\twentyitemshort{<dates>}{<title/description>}
-%	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
-%\end{twentyshort}
+\section{Awards}
+
+\begin{twentyshort}
+  %\twentyitemshort{<dates>}{<title/description>}
+  \twentyitemshort{2018}{Award for highest grade in high school}
+  \\
+  \twentyitemshort{2018}{Merit scholarship from Amorim Cork Composites}
+\end{twentyshort}
+
+\vfill
 
 %----------------------------------------------------------------------------------------
 %	 WORK EXPERIENCE
@@ -137,18 +149,37 @@ personal server and blog.
 
 \begin{twenty}
 	%\twentyitem{<dates>}{<title>}{<company>}{<description>}
-	\twentyitem{2022}{Software developer}{Critical Software}
+	\twentyitem{2022-current}{Embedded Software Engineer}{Critical Software}
+    {Embedded Software Engineer working on the verification and validation of
+    embedded software for the aerospace industry.
+    Started working at this position for my Master's thesis. The objective of this
+    thesis was to analyze and optimize the processes of the project's developer
+    team. This was achieved by identifying the bottlenecks and developing
+    solutions/tools.}
+	\twentyitem{2022}{Software Developer Intern}{Critical Software}
     {Enrolled in the summer internship program at Critical Software (Summer Camp), with
     the objective of learning more about the company's activities, and developing
     soft-skills. Developed three projects, and attended multiple workshops during
     this one-month internship.}
-	\twentyitem{2020-2021}{Computer games developer}{LusoInfo}
+	\twentyitem{2020-2021}{Web Game Developer}{LusoInfo}
     {Responsible from the team tasked to recreate a set of educational games, developed
     in flash, in the Unity game engine. These games were then hosted in the company's
     website to be played by children (aged 6 to 14) at school. Developed the games
     in C\# for the Unity game engine, with an emphasis on performance so the games
     ran on WebGL on lower-end computers.}
 \end{twenty}
+
+\vfill
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+\newpage % Start a new page
+
+\makeprofile % Print the sidebar
+
+% \vfill
 
 %----------------------------------------------------------------------------------------
 %	 Projects
@@ -157,7 +188,12 @@ personal server and blog.
 \section{Projects}
 
 \begin{twenty}
-	%\twentyitem{<dates>}{<title>}{<company>}{<description>}
+  \twentyitem{2022}{TraSMAPy}
+    {\twentyshortghref{https://github.com/JoaoCostaIFG/TraSMAPy}{Project's GitHub page}}
+    {A Python API for the \href{https://www.eclipse.org/sumo/}{SUMO traffic simulator} with the
+    objective of allowing researchers with limited knowledge in informatics and programming to
+    model road traffic simulations. The API abstracts lower level concepts of the simulator and
+    builds new concepts to make it easier to build agent-based simulations,}
   \twentyitem{2022}{µKernel}
     {\twentyshortghref{https://github.com/JoaoCostaIFG/SETR/tree/master/uKernel}{Project's GitHub page}}
     {A real-time micro-kernel for the Arduino UNO supporting POSIX style tasks, mutexes,
@@ -182,20 +218,6 @@ personal server and blog.
     \twentyshortref{https://aur.archlinux.org/packages/maww}{Arch Linux package}
     on the AUR.}
 \end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 SECOND PAGE EXAMPLE
-%----------------------------------------------------------------------------------------
-
-%\newpage % Start a new page
-
-%\makeprofile % Print the sidebar
-
-%\section{Other information}
-
-%\subsection{Review}
-
-%TEXT
 
 %----------------------------------------------------------------------------------------
 
