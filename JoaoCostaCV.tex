@@ -3,7 +3,7 @@
 % LaTeX Template
 %
 % Original author:
-% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
 % Vel (vel@LaTeXTemplates.com) and than modified by
 % JoaoCostaIFG (joaocosta.work@posteo.net)
 %
@@ -45,10 +45,9 @@
 %	 ABOUT ME
 %----------------------------------------------------------------------------------------
 
-\aboutme{I'm a software engineer with a Master's degree in Informatics Engineering at
-FEUP. My interests mainly reside in developing software, taking care of my servers,
-writing (I have a blog), and developing projects using microcontrollers. I have experience
-working in large and fully-remote teams, and publicly presenting my work and ideas.}
+\aboutme{I'm a software engineer with a Master's in Informatics Engineering.
+I like to develop personal software projects, take care of my servers, and write on my
+blog.}
 
 %----------------------------------------------------------------------------------------
 %	 SKILLS
@@ -58,12 +57,13 @@ working in large and fully-remote teams, and publicly presenting my work and ide
 \skills{
   {JavaScript - TypeScript/4},
   {Java/4.5},
+  {Docker/4.5},
   {Python/5},
-  {Linux - DevOps/5},
+  {Linux/5},
   {C - C++/5.5}}
 
 % Skill text section, each skill must have a value between 0 an 6
-\skillstext{}
+%\skillstext{}
 
 \languageskills{
   {Portuguese/Native},
@@ -78,14 +78,39 @@ working in large and fully-remote teams, and publicly presenting my work and ide
 \vfill
 
 %----------------------------------------------------------------------------------------
-%	 HOBBIES / INTERESTS
+%	 Bio
 %----------------------------------------------------------------------------------------
 
-\section{Hobbies/Interests}
+\section{Bio}
 
-On my free-time, I'm usually working on personal projects involving informatics and (sometimes)
-electronics. Often, these projects lead to contributions to open-source software. I also enjoy
-maintaining a personal home-server and a blog focused on tech.
+I like working in almost everything software related. My work experience mainly focuses
+on embedded software development, focusing on safety-critical systems, but I consider
+myself a generalist. This last year I started working in backend software development
+at a startup.
+
+I get most of my knowledge/experience from my personal projects outside of work. These
+projects involve informatics and electronics, spanning the whole tech stack. I'm also
+a big fan of open-source software and try to contribute to it as much as I can.
+
+In my free time, you can find me working on personal projects, reading, or playing
+video games. I'm also a big fan of paintball and cycling.
+
+\vfill
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{twentyshort}
+  %\twentyitemshort{<dates>}{<title/description>}
+  \twentyitemshort{2023}{2nd place on AI for banking competition from Millenium}
+  \\
+  \twentyitemshort{2018}{University scholarship from Amorim Cork Composites}
+  \\
+  \twentyitemshort{2018}{Highest grade in informatics from highschool}
+\end{twentyshort}
 
 \vfill
 
@@ -108,40 +133,6 @@ maintaining a personal home-server and a blog focused on tech.
 \vfill
 
 %----------------------------------------------------------------------------------------
-%	 PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-\section{Publications}
-
-\begin{twenty}
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-	\twentyitem{2023}{Verification of the VxWorks real-time operating system for DO-178C compliance}
-    {}
-    {My Master's thesis. The objective of this thesis was to analyze and optimize the
-    processes of the
-    real-time OS verification team at Critical Software. This resulted in a list of
-    bottlenecks and action to address them, and the development of solutions/tools
-    for some problems.}
-\end{twenty}
-
-\vfill
-
-%----------------------------------------------------------------------------------------
-%	 AWARDS
-%----------------------------------------------------------------------------------------
-
-\section{Awards}
-
-\begin{twentyshort}
-  %\twentyitemshort{<dates>}{<title/description>}
-  \twentyitemshort{2018}{Award for highest grade in high school}
-  \\
-  \twentyitemshort{2018}{Merit scholarship from Amorim Cork Composites}
-\end{twentyshort}
-
-\vfill
-
-%----------------------------------------------------------------------------------------
 %	 WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
@@ -149,24 +140,30 @@ maintaining a personal home-server and a blog focused on tech.
 
 \begin{twenty}
 	%\twentyitem{<dates>}{<title>}{<company>}{<description>}
-	\twentyitem{2022-current}{Embedded Software Engineer}{Critical Software}
+	\twentyitem{2024}{Backend Software Engineer}{Codacy}
+    {Backend Software Engineer on the team responsible for the new security-focused
+    product of the company. Worked mostly with Scala code-bases. Tasks included
+    migrating parts of old backend components, implementing new endpoints, and
+    refactoring databases.}
+	\twentyitem{2022-2024}{Embedded Software Engineer}{Critical Software}
     {Embedded Software Engineer working on the verification and validation of
-    embedded software for the aerospace industry.
-    Started working at this position for my Master's thesis. The objective of this
-    thesis was to analyze and optimize the processes of the project's developer
-    team. This was achieved by identifying the bottlenecks and developing
-    solutions/tools.}
-	\twentyitem{2022}{Software Developer Intern}{Critical Software}
-    {Enrolled in the summer internship program at Critical Software (Summer Camp), with
-    the objective of learning more about the company's activities, and developing
-    soft-skills. Developed three projects, and attended multiple workshops during
-    this one-month internship.}
+    operating systems for the aerospace industry. Responsible for writing
+    requirements, test cases, and test procedures for the verification of
+    real-time operating systems on a team of 20 people.}
+	\twentyitem{2023-2024}{Software Engineer}{Civil Engineering Department of FEUP}
+    {Solo freelancer work with the civil engineering department of FEUP to develop
+    monitoring tools and pipelines for the construction work that was taking
+    place in the metro tunnels of the city of Porto, Portugal. The objective
+    was to acquire and process real-time sensor data and guarantee the safety
+    of the workers, equipment, and historical buildings in the area.}
+	\twentyitem{2022}{Software Engineer Intern}{Critical Software}
+    {Internship program at Critical Software, with the objective of learning
+    more about the company's activities, agile methodologies, and developing
+    soft-skills.}
 	\twentyitem{2020-2021}{Web Game Developer}{LusoInfo}
-    {Responsible from the team tasked to recreate a set of educational games, developed
-    in flash, in the Unity game engine. These games were then hosted in the company's
-    website to be played by children (aged 6 to 14) at school. Developed the games
-    in C\# for the Unity game engine, with an emphasis on performance so the games
-    ran on WebGL on lower-end computers.}
+    {Member of a 4 people freelancer team tasked with porting a collection
+    of flash games to the Unity game engine. The games are part of an educational
+    game suite for school children}
 \end{twenty}
 
 \vfill
@@ -188,6 +185,13 @@ maintaining a personal home-server and a blog focused on tech.
 \section{Projects}
 
 \begin{twenty}
+  \twentyitem{2023}{Octree implementation for SLAM}
+    {\twentyshortghref{https://github.com/JoaoCostaIFG/slam}{Project's GitHub page}}
+    {An Octree implementation in C++ for use in SLAM application for an autonomous
+    submarine. This project was developed for the university's robotics research
+    institute. The objective was improving the performance of existing Octree
+    implementations for the current application without compromising the
+    spacial efficiency and accuracy.}
   \twentyitem{2022}{TraSMAPy}
     {\twentyshortghref{https://github.com/JoaoCostaIFG/TraSMAPy}{Project's GitHub page}}
     {A Python API for the \href{https://www.eclipse.org/sumo/}{SUMO traffic simulator} with the
@@ -219,8 +223,26 @@ maintaining a personal home-server and a blog focused on tech.
     on the AUR.}
 \end{twenty}
 
+\vfill
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{twenty}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+	\twentyitem{2023}{Verification of real-time operating system for DO-178C compliance}
+    {}
+    {My Master's thesis. The objective of my thesis was to analyze and optimize
+    the processes of the aviation real-time OS verification team at Critical
+    Software. This work resulted in several internal tools and optimizations
+    that streamlined the development and saved money.}
+\end{twenty}
+
 %----------------------------------------------------------------------------------------
 
 \vfill
 
-\end{document} 
+\end{document}

@@ -207,7 +207,7 @@
 
 		\profilesection{Skills}
 
-    \profilesubsection{Hard skills}
+    %\profilesubsection{Hard skills}
 
 		\skills
 		%\skillstext
