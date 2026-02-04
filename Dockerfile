@@ -1,11 +1,24 @@
-FROM mingc/latex:latest
+# based on https://github.com/mingchen/docker-latex
+FROM ubuntu:26.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN \
+  apt-get update && \
+  apt-get install -y texlive-full
+
+RUN \
+  apt-get install -y curl unzip wget && \
+  rm -rf /var/lib/apt/lists/*
+
 
 COPY install_font_awesome5.sh /install_font_awesome5.sh
 COPY install_source_code_pro.sh /install_source_code_pro.sh
-
 RUN \
-  sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list && \
-  apt-get update && apt-get install fonts-crosextra-carlito unzip && \
   sh /install_source_code_pro.sh && \
   sh /install_font_awesome5.sh && \
   fc-cache -f -v
+
+WORKDIR /data
+
+VOLUME ["/data"]

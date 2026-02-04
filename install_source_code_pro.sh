@@ -1,6 +1,8 @@
 #!/bin/sh
 # Based on: https://gist.githubusercontent.com/lucasdavila/3875946/raw/3ad424ae03ac2e4f8f55ca36434d2e1f1630d080/install_source_code_pro.sh
 
+set -eu
+
 printf "\n* Downloading source code pro font latest version"
 wget -O SourceCodeProOTF.zip "$(curl https://api.github.com/repos/adobe-fonts/source-code-pro/releases/latest | grep browser_download_url | head -1 | sed -re 's/.*: "([^"]+)".*/\1/')"
 

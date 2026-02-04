@@ -5,12 +5,11 @@
 #   dockerlatex.sh pdflatex foo.tex
 #
 
-set -e # Exit with nonzero exit code if anything fails
+set -eu
 
-docker build -t tex .
+docker build -t cv .
 
 docker run --rm -i --user="$(id -u):$(id -g)" \
   -v "$(pwd)":/data \
   -v "$(pwd)/fonts":/root/.fonts \
-  tex "$@"
-  #mingc/latex "$@"
+  cv "$@"

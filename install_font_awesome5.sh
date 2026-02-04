@@ -1,6 +1,8 @@
 #!/bin/sh
 # Based on: https://gist.githubusercontent.com/lucasdavila/3875946/raw/3ad424ae03ac2e4f8f55ca36434d2e1f1630d080/install_source_code_pro.sh
 
+set -eu
+
 printf "\n* Downloading font awesome 5 font version v5.15.4"
 wget -O fontawesome5.zip "https://use.fontawesome.com/releases/v5.15.4/fontawesome-free-5.15.4-desktop.zip"
 
