@@ -1,0 +1,13 @@
+version = 1
+
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022-2026 Joao Costa <me@joaocosta.dev>"
+SPDX-License-Identifier = "EUPL-1.2"
+
+[[annotations]]
+path = ["twentysecondcv.cls", "LICENSE.CarmineSpagnuolo"]
+precedence = "override"
+SPDX-FileCopyrightText = "2016 Carmine Spagnuolo & latextemplates.com contributors; modifications 2022-2026 Joao Costa <me@joaocosta.dev>"
+SPDX-License-Identifier = "MIT"
