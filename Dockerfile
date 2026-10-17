@@ -1,5 +1,5 @@
 # based on https://github.com/mingchen/docker-latex
-FROM ubuntu:26.04@sha256:3595d7fc4286a33fad0fd853a4063e654287a9c3787437d7937c94ca3f7a804e
+FROM ubuntu:26.04@sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944
 
 ENV DEBIAN_FRONTEND=noninteractive
 
